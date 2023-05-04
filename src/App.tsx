@@ -2,17 +2,18 @@ import React from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
+import OnOff from "./components/OnOff/OnOff";
 
 function App() {
     console.log("App rendering")
     return (
-        <div>
+        <div className={"content"}>
             <PageTitle title={"This is APP component"}/>
             <PageTitle title={"My friends"}/>
             Article 1
             <Rating value={3}/>
-            <Accordion titleValue={"Меню"} collapsed={false}/>
-            <Accordion titleValue={"Список"} collapsed={false}/>
+            <Accordion titleValue={"Меню"} collapsed={true}/>
+            <Accordion titleValue={"Список"} collapsed={true}/>
             Article 2
             <Rating value={0}/>
             <Rating value={1}/>
@@ -20,6 +21,9 @@ function App() {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
+            Homework
+            <OnOff value={true}/>
+            {/*<OnOff value={false}/>*/}
         </div>
     );
 }
