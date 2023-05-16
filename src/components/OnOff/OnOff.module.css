@@ -10,7 +10,7 @@
     margin: 10px;
 }
 
-.item1true{
+.true{
     background-color: green;
 }
 
@@ -22,7 +22,7 @@
     margin: 10px;
 }
 
-.item2false{
+.false{
     background-color: red;
 }
 
@@ -34,10 +34,3 @@
     margin: 10px;
 }
 
-.item3true{
-    background-color: green;
-}
-
-.item3false{
-    background-color: red;
-}
