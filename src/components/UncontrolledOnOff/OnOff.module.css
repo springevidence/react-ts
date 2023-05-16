@@ -1,0 +1,36 @@
+.items {
+    display: flex;
+    flex-direction: row;
+}
+.item1 {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.true{
+    background-color: green;
+}
+
+.item2 {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.false{
+    background-color: red;
+}
+
+.item3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
