@@ -5,7 +5,7 @@ type OnOffType = {
     value: boolean
     setValue: (value: boolean)=> void
 }
-function OnOff(props: OnOffType) {
+export function OnOff(props: OnOffType) {
     // if (props.value) {
     //     return (
     //         <div className={s.items}>
@@ -48,11 +48,10 @@ function OnOff(props: OnOffType) {
         margin: "10px",
         backgroundColor: props.value ? "green" : "red"
     }
+
     return <div className={s.items}>
                 <div style={OnStyle} onClick={() => props.setValue(true)}>ON</div>
                 <div style={OffStyle} onClick={() => props.setValue(false)}>OFF</div>
                 <div style={IndicatorStyle}></div>
             </div>
 }
-
-export default OnOff;
