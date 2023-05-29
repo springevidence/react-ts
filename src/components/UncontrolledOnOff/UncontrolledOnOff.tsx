@@ -3,9 +3,10 @@ import s from './OnOff.module.css'
 
 type OnOffType = {
     onChange: (value: boolean) => void
+    defaultValue?: boolean
 }
-function UncontrolledOnOff(props: OnOffType) {
-    let [value, setValue] = useState(false)
+export function UncontrolledOnOff(props: OnOffType) {
+    let [value, setValue] = useState(props.defaultValue ? props.defaultValue : false)
 
     const OnStyle = {
         // textAlign: "center",
@@ -48,5 +49,3 @@ function UncontrolledOnOff(props: OnOffType) {
                 <div style={IndicatorStyle}></div>
             </div>
 }
-
-export default UncontrolledOnOff;

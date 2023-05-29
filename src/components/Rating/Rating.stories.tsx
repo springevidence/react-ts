@@ -8,7 +8,6 @@ const meta = {
 } satisfies Meta<typeof Rating>;
 
 export default meta;
-// type Story = StoryObj<typeof meta>;
 
 export const EmptyRating = () => <Rating value={0} putStars={x => x}/>
 export const Rating1 = () => <Rating value={1} putStars={x => x}/>

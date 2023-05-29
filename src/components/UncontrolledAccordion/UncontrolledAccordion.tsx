@@ -3,7 +3,7 @@ import React, {useState} from "react";
 type AccordionPropsType = {
     titleValue: string
 }
-function UncontrolledAccordion(props: AccordionPropsType) {
+export function UncontrolledAccordion(props: AccordionPropsType) {
     // console.log("Accordion rendering")
     let [collapsed, setCollapsed] = useState(false)
     const collapsedBody = () => {
@@ -36,5 +36,3 @@ function AccordionBody() {
             <li>5</li>
         </ul>
 }
-
-export default UncontrolledAccordion;
