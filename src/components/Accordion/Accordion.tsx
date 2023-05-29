@@ -5,7 +5,7 @@ type AccordionPropsType = {
     collapsed: boolean
     setCollapsed: (collapsed: boolean) => void
 }
-function Accordion(props: AccordionPropsType) {
+export function Accordion(props: AccordionPropsType) {
     // console.log("Accordion rendering")
     return <div>
             <AccordionTitle title={props.titleValue} collapsed={props.collapsed} setCollapsed={props.setCollapsed}/>
@@ -34,5 +34,3 @@ function AccordionBody() {
             <li>5</li>
         </ul>
 }
-
-export default Accordion;
