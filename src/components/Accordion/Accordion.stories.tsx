@@ -8,7 +8,6 @@ const meta = {
 } satisfies Meta<typeof Accordion>;
 
 export default meta;
-// type Story = StoryObj<typeof meta>;
 
 export const CollapsedMode = () => <Accordion titleValue={'Menu'} collapsed={true} setCollapsed={x => x}/>
 export const UnCollapsedMode = () => <Accordion titleValue={'Menu'} collapsed={false} setCollapsed={x => x}/>
