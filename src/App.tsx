@@ -15,6 +15,8 @@ function App() {
     let [collapsed, setCollapsed] = useState(false)
 
     let [value, setValue] = useState(false)
+    const onClickCallback = () => {console.log('clicked')}
+
     return (
         <div className={"content"}>
             <PageTitle title={"This is APP component"}/>
@@ -28,8 +30,8 @@ function App() {
             <Rating value={ratingValue} putStars={setRatingValue}/>
 
             <h3>Controlled Accordion</h3>
-            <Accordion titleValue={"Меню"} collapsed={collapsed} setCollapsed={setCollapsed}/>
-            <Accordion titleValue={"Список"} collapsed={collapsed} setCollapsed={setCollapsed}/>
+            <Accordion titleValue={"Меню"} collapsed={collapsed} setCollapsed={setCollapsed} items={[{title: '111', value: 1}]} onClick={onClickCallback}/>
+            <Accordion titleValue={"Список"} collapsed={collapsed} setCollapsed={setCollapsed} items={[{title: '111', value: 1}]} onClick={onClickCallback}/>
 
             <h3>Uncontrolled Accordion</h3>
             <UncontrolledAccordion titleValue={"Меню"}/>
