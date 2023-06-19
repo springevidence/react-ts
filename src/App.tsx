@@ -6,6 +6,8 @@ import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
+import Select from "./components/Select/Select";
+import {log} from "util";
 
 function App() {
     console.log("App rendering")
@@ -52,6 +54,10 @@ function App() {
 
             <h3>Controlled OnOff</h3>
             <OnOff value={value} setValue={setValue}/>
+
+            <Select value={'2'}
+                    onChange={()=>{console.log('item clicked')}}
+                    items={[{title: 'html', id: '1'}, {title: 'css', id: '2'}, {title: 'js', id: '3'}]} />
         </div>
     );
 }
