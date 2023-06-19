@@ -29,3 +29,5 @@ function Star(props: StarPropsType) {
         props.putStars(props.value)
     }}> {props.selected ? <b>star </b> : "star "}</span>
 }
+
+export const MemoRating = React.memo(Rating)

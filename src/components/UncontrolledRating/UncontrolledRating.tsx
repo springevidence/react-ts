@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {RatingValueType} from "../Rating/Rating";
+import {UncontrolledOnOff} from "../UncontrolledOnOff/UncontrolledOnOff";
 
 export type RatingPropsType = {
     defaultValue?: RatingValueType
@@ -36,3 +37,5 @@ function Star(props: StarPropsType) {
     //     return <span>star </span>
     // }
 }
+
+export const MemoUncontrolledRating = React.memo(UncontrolledRating)

@@ -37,3 +37,5 @@ function AccordionBody(props: AccordionBodyPropsType) {
         {props.items.map((i, index) => <li onClick={() => {props.onClick(i.value)}} key={index}>{i.title}</li>)}
         </ul>
 }
+
+export const MemoAccordion = React.memo(Accordion)

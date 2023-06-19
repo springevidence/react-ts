@@ -41,3 +41,5 @@ function AccordionBody() {
             <li>5</li>
         </ul>
 }
+
+export const MemoUncontrolledAccordion = React.memo(UncontrolledAccordion)

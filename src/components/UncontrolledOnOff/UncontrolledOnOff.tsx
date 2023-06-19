@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import s from './OnOff.module.css'
+import {Rating} from "../Rating/Rating";
 
 type OnOffType = {
     onChange: (value: boolean) => void
@@ -49,3 +50,4 @@ export function UncontrolledOnOff(props: OnOffType) {
                 <div style={IndicatorStyle}></div>
             </div>
 }
+export const MemoUncontrolledOnOff = React.memo(UncontrolledOnOff)

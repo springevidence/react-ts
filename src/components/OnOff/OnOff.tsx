@@ -55,3 +55,5 @@ export function OnOff(props: OnOffType) {
                 <div style={IndicatorStyle}></div>
             </div>
 }
+
+export const MemoOnOff = React.memo(OnOff)
