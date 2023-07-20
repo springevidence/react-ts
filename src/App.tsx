@@ -11,6 +11,7 @@ import {MemoUncontrolledRating, UncontrolledRating} from "./components/Uncontrol
 import {MemoUncontrolledOnOff, UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import Select from "./components/Select/Select";
 import {log} from "util";
+import Clock from "./components/Clock/Clock";
 
 function App() {
     console.log("App rendering")
@@ -61,6 +62,7 @@ function App() {
             <Select value={'2'}
                     onChange={()=>{console.log('item clicked')}}
                     items={[{title: 'html', id: '1'}, {title: 'css', id: '2'}, {title: 'js', id: '3'}]} />
+            <Clock/>
         </div>
     );
 }
